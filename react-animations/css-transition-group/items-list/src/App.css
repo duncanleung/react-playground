@@ -1,0 +1,46 @@
+.todos-appear {
+  opacity: 0.01;
+}
+
+.todos-appear.todos-appear-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.todos-enter {
+  opacity: 0.01;
+}
+
+.todos-enter.todos-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+  animation: slide-in-from-left 500ms forwards;
+}
+
+.todos-leave {
+  opacity: 1;
+}
+
+.todos-leave.todos-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+  animation: slide-out-left 300ms forwards;
+}
+
+@keyframes slide-in-from-left {
+  0% {
+    transform: translate(-1%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+
+@keyframes slide-out-left {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(-1%);
+  }
+}

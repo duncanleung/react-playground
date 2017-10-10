@@ -5,7 +5,8 @@
   - Function as Child Components
 
 - React Animations
-  - TransitionGroup
+  - ReactTransitionGroup
+  - ReactCSSTransitionGroup
 
 External Sources
   - [Function as Child Components > Higher Order Components](https://www.youtube.com/watch?v=BcVAq3YFiuc)
